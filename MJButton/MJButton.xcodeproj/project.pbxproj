@@ -15,6 +15,8 @@
 		53DBD0001E6FDB6D008ED93A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53DBCFFE1E6FDB6D008ED93A /* LaunchScreen.storyboard */; };
 		53DBD00B1E6FDB6D008ED93A /* MJButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DBD00A1E6FDB6D008ED93A /* MJButtonTests.m */; };
 		53DBD0161E6FDB6D008ED93A /* MJButtonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DBD0151E6FDB6D008ED93A /* MJButtonUITests.m */; };
+		53DBD0251E6FDBEE008ED93A /* MJButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DBD0241E6FDBEE008ED93A /* MJButton.m */; };
+		53DBD0291E6FE1F4008ED93A /* QRCode.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DBD0281E6FE1F4008ED93A /* QRCode.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		53DBD0111E6FDB6D008ED93A /* MJButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MJButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53DBD0151E6FDB6D008ED93A /* MJButtonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJButtonUITests.m; sourceTree = "<group>"; };
 		53DBD0171E6FDB6D008ED93A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53DBD0231E6FDBEE008ED93A /* MJButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJButton.h; sourceTree = "<group>"; };
+		53DBD0241E6FDBEE008ED93A /* MJButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJButton.m; sourceTree = "<group>"; };
+		53DBD0281E6FE1F4008ED93A /* QRCode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QRCode.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 		53DBCFEF1E6FDB6D008ED93A /* MJButton */ = {
 			isa = PBXGroup;
 			children = (
+				53DBD0281E6FE1F4008ED93A /* QRCode.png */,
 				53DBCFF31E6FDB6D008ED93A /* AppDelegate.h */,
 				53DBCFF41E6FDB6D008ED93A /* AppDelegate.m */,
 				53DBCFF61E6FDB6D008ED93A /* ViewController.h */,
@@ -110,6 +116,8 @@
 				53DBCFFE1E6FDB6D008ED93A /* LaunchScreen.storyboard */,
 				53DBD0011E6FDB6D008ED93A /* Info.plist */,
 				53DBCFF01E6FDB6D008ED93A /* Supporting Files */,
+				53DBD0231E6FDBEE008ED93A /* MJButton.h */,
+				53DBD0241E6FDBEE008ED93A /* MJButton.m */,
 			);
 			path = MJButton;
 			sourceTree = "<group>";
@@ -249,6 +257,7 @@
 				53DBD0001E6FDB6D008ED93A /* LaunchScreen.storyboard in Resources */,
 				53DBCFFD1E6FDB6D008ED93A /* Assets.xcassets in Resources */,
 				53DBCFFB1E6FDB6D008ED93A /* Main.storyboard in Resources */,
+				53DBD0291E6FE1F4008ED93A /* QRCode.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53DBD0251E6FDBEE008ED93A /* MJButton.m in Sources */,
 				53DBCFF81E6FDB6D008ED93A /* ViewController.m in Sources */,
 				53DBCFF51E6FDB6D008ED93A /* AppDelegate.m in Sources */,
 				53DBCFF21E6FDB6D008ED93A /* main.m in Sources */,
