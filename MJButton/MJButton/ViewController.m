@@ -16,13 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    MJButton* btn = [[MJButton alloc]initWithFrame:CGRectMake(0, 50, 100, 120)];
-    btn.buttonTypeValue = MJButtonTypeValue1;
-    [btn setTitle:@"111" forState:UIControlStateNormal];
-    //[btn setImage:[UIImage imageNamed:@"QRCode"] forState:UIControlStateNormal];
+    MJButton* btn = [MJButton createMJButton:CGRectMake(0, 50, 100, 120) title:@"我是按钮" fontSize:12 Image:nil Type:MJButtonTypeValue1 handler:^(UIButton *sender) {
+        NSLog(@"我点击了");
+    }];
     [self.view addSubview:btn];
-    
     // Do any additional setup after loading the view, typically from a nib.
 }
 

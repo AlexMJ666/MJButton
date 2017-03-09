@@ -10,17 +10,21 @@
 
 @implementation MJButton
 
-+(MJButton*)createMJButton:(CGRect)frame title:(NSString*)title fontSize:(NSInteger)fontSize Image:(NSString*)imageName target:(id)target action:(SEL)action handler:(tagpHandler)handler
++(MJButton*)createMJButton:(CGRect)frame title:(NSString*)title fontSize:(NSInteger)fontSize Image:(NSString*)imageName Type:(MJButtonType)buttonType handler:(tagpHandler)handler
 {
     MJButton* btn = [super buttonWithType:UIButtonTypeCustom];
     btn.adjustsImageWhenHighlighted = NO;
     btn.frame = frame;
+    btn.buttonTypeValue = buttonType;
     btn.titleLabel.textAlignment = NSTextAlignmentCenter;
     btn.titleLabel.font = [UIFont systemFontOfSize:fontSize];
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [btn setTitle:title forState:UIControlStateNormal];
-    [btn setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    if (imageName) {
+        [btn setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    }
     btn.handler = handler;
-    [btn addTarget:target action:@selector(btnTap:) forControlEvents:UIControlEventTouchUpInside];
+    [btn addTarget:btn action:@selector(btnTap:) forControlEvents:UIControlEventTouchUpInside];
     return btn;
     
 }

@@ -17,4 +17,18 @@ typedef NS_ENUM(NSUInteger,MJButtonType) {
 @interface MJButton : UIButton
 @property (nonatomic, assign) MJButtonType buttonTypeValue;
 @property (nonatomic, strong)tagpHandler handler;
+
+
+/**
+ 创建button
+
+ @param frame 尺寸
+ @param title 标题
+ @param fontSize 文字大小
+ @param imageName 图片名/无图片则为nil
+ @param handler handler description
+ @param buttonType buttonType description
+ @return return value description
+ */
++(MJButton*)createMJButton:(CGRect)frame title:(NSString*)title fontSize:(NSInteger)fontSize Image:(NSString*)imageName Type:(MJButtonType)buttonType handler:(tagpHandler)handler;
 @end
