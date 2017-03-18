@@ -26,7 +26,6 @@
     btn.handler = handler;
     [btn addTarget:btn action:@selector(btnTap:) forControlEvents:UIControlEventTouchUpInside];
     return btn;
-    
 }
 
 /**
